@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_payschool/app/views/config/non_participating_schools'
+let g:netrw_dirhist_2='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_core/db/migrate'
+let g:netrw_dirhist_3='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_payschool/db/migrate'
+let g:netrw_dirhist_4='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_core/db/migrate'
+let g:netrw_dirhist_5='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_core/app/mailers'
+let g:netrw_dirhist_6='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_payschool/app/assets/javascripts/common'
+let g:netrw_dirhist_7='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_payschool/app/assets/javascripts'
+let g:netrw_dirhist_8='/Volumes/Macintosh HD2/Sites/peerTransfer/peertransfer_core/db/migrate'
+let g:netrw_dirhist_9='/Volumes/Macintosh HD2/Sites/miguelsoro/app/models/ckeditor'
