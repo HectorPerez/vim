@@ -51,12 +51,9 @@ set list                         " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 
 
-" Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
 " Or use vividchalk
 set t_Co=256
-colorscheme wombat256
+colorscheme molokai
 
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
