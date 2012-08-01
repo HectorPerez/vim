@@ -50,6 +50,8 @@ set laststatus=2                 " Show the status line all the time
 set list                         " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " Or use vividchalk
 set t_Co=256
@@ -78,14 +80,9 @@ if exists(":Tabularize")
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gg :e Gemfile<cr>
 map <leader>gr :e config/routes.rb<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>f :CtrlP .<cr>
 
 " Edit another file in the same directory as the current file
 " uses expression to extract path from current file's path
@@ -93,6 +90,9 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :e %%
 map <leader>sp :sp %%
 map <leader>vsp :vsp %%
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
