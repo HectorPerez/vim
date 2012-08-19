@@ -51,7 +51,7 @@ set list                         " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.scssc,*.sassc
 
 " Or use vividchalk
 set t_Co=256
@@ -82,6 +82,7 @@ endif
 
 map <leader>gg :e Gemfile<cr>
 map <leader>gr :e config/routes.rb<cr>
+map <leader>db :e config/database.yml<cr>
 map <leader>f :CtrlP .<cr>
 
 " Edit another file in the same directory as the current file
@@ -90,9 +91,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :e %%
 map <leader>sp :sp %%
 map <leader>vsp :vsp %%
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
