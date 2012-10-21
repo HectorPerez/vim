@@ -70,6 +70,8 @@ if has("autocmd")
   autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+  " Remove trailing whitespaces
+  autocmd BufWritePre * :%s/\s\+$//e
 endif
 
 let mapleader=","
