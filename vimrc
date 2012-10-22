@@ -53,6 +53,8 @@ set listchars=tab:▸\ ,eol:¬
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.scssc,*.sassc
 
+set autoread                     " Update open files when changed externally
+
 " Or use vividchalk
 set t_Co=256
 colorscheme molokai
@@ -81,6 +83,24 @@ if exists(":Tabularize")
   nmap <Leader>a: :Tabularize /:\zs<CR>
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
+
+" Improve CtrlP
+let ctrlp_filter_greps = "".
+      \ "egrep -iv '\\.(" .
+      \ "jar|class|swp|swo|log|so|o|pyc|jpe?g|png|gif|mo|po" .
+      \ ")$' | " .
+      \ "egrep -v '^(\\./)?(" .
+      \ "deploy/|lib/|classes/|libs/|deploy/vendor/|.git/|.hg/|.svn/|.*migrations/" .
+      \ ")'"
+let my_ctrlp_git_command = "" .
+      \ "cd %s && git ls-files | " .
+      \ ctrlp_filter_greps
+if has("unix")
+  let my_ctrlp_user_command = "" .
+        \ "find %s '(' -type f -or -type l ')' -maxdepth 15 -not -path '*/\\.*/*' | " .
+        \ ctrlp_filter_greps
+endif
+let g:ctrlp_user_command = ['.git/', my_ctrlp_git_command, my_ctrlp_user_command]
 
 map <leader>gg :e Gemfile<cr>
 map <leader>gr :e config/routes.rb<cr>
