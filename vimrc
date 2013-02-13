@@ -39,7 +39,7 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set backupdir=~/tmp               " where to put backup files.
+set backupdir=~/tmp/.vim          " where to put backup files.
 
 set tabstop=2                     " Global tab width.
 set shiftwidth=2                  " And again, related.
@@ -48,7 +48,7 @@ set laststatus=2                  " Show the status line all the time
 set list                          " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/tmp/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.scssc,*.sassc
 
 set autoread                     " Update open files when changed externally
