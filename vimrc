@@ -39,14 +39,13 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set backupdir=/tmp/.vim/_backup   " where to put backup files.
-set directory=/tmp/.vim/_temp     " where to put swap files."
+set backupdir=~/tmp               " where to put backup files.
 
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
-set laststatus=2                 " Show the status line all the time
-set list                         " Show invisible characters
+set tabstop=2                     " Global tab width.
+set shiftwidth=2                  " And again, related.
+set expandtab                     " Use spaces instead of tabs
+set laststatus=2                  " Show the status line all the time
+set list                          " Show invisible characters
 set listchars=tab:▸\ ,eol:¬
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
