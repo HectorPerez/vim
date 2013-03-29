@@ -74,6 +74,7 @@ if has("autocmd")
   " Remove trailing whitespaces
   autocmd BufWritePre * :%s/\s\+$//e
   autocmd BufNewFile,BufRead *.json set ft=javascript
+  autocmd BufNewFile,BufRead *.eco set ft=html
 endif
 
 let mapleader=","
