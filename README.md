@@ -1,7 +1,7 @@
 # Installation
 
 ```
-git clone git://github.com/vigosan/vim.git .vim
+git clone git@github.com:arpahector/vim.git .vim
 ln -s .vim/vimrc .vimrc
 cd .vim
 git submodule init
