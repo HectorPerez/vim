@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/hector/code/Splashpath-Stats/dashboards'
+let g:netrw_dirhist_2='/Users/hector/code/splashpath/lib/event_emitter'
+let g:netrw_dirhist_3='/Users/hector/code/splashpath/lib/event_emitter/lib/event_emitter'
+let g:netrw_dirhist_4='/Users/hector/code/splashpath/website/app/controllers/website/home_controller'

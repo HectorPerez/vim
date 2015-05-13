@@ -72,7 +72,7 @@ if has("autocmd")
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
   " Remove trailing whitespaces
-  autocmd BufWritePre * :%s/\s\+$//e
+  " autocmd BufWritePre * :%s/\s\+$//e
   autocmd BufNewFile,BufRead *.json set ft=javascript
   autocmd BufNewFile,BufRead *.eco set ft=html
 endif
