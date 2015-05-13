@@ -7,6 +7,7 @@ silent! call pathogen#runtime_append_all_bundles()
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
+filetype plugin on
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
@@ -122,3 +123,4 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 let g:EasyMotion_leader_key = '//'
+au BufRead,BufNewFile *.thor set filetype=ruby
