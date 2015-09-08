@@ -40,3 +40,15 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "bundle/vim-abolish"]
+	path = bundle/vim-abolish
+	url = git@github.com:tpope/vim-abolish.git
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = git@github.com:tpope/vim-bundler.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = git@github.com:digitaltoad/vim-jade.git
