@@ -3,6 +3,16 @@
 set encoding=utf-8
 set nocompatible                  " Must come first because it changes other options.
 
+" disable arrow keys so we use hjkl
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
+
 silent! call pathogen#runtime_append_all_bundles()
 
 syntax enable                     " Turn on syntax highlighting.
@@ -124,3 +134,4 @@ nnoremap <c-l> <c-w>l
 
 let g:EasyMotion_leader_key = '//'
 au BufRead,BufNewFile *.thor set filetype=ruby
+
